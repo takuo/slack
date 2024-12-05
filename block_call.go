@@ -14,6 +14,11 @@ func (s CallBlock) BlockType() MessageBlockType {
 	return s.Type
 }
 
+// GetBlockID returns the BlockID of the block
+func (s CallBlock) GetBlockID() string {
+	return s.BlockID
+}
+
 // NewFileBlock returns a new instance of a file block
 func NewCallBlock(callID string) *CallBlock {
 	return &CallBlock{

@@ -14,6 +14,11 @@ func (s ActionBlock) BlockType() MessageBlockType {
 	return s.Type
 }
 
+// GetBlockID returns the BlockID of the block
+func (s ActionBlock) GetBlockID() string {
+	return s.BlockID
+}
+
 // NewActionBlock returns a new instance of an Action Block
 func NewActionBlock(blockID string, elements ...BlockElement) *ActionBlock {
 	return &ActionBlock{

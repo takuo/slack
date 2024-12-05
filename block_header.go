@@ -14,6 +14,11 @@ func (s HeaderBlock) BlockType() MessageBlockType {
 	return s.Type
 }
 
+// GetBlockID returns the BlockID of the block
+func (s HeaderBlock) GetBlockID() string {
+	return s.BlockID
+}
+
 // HeaderBlockOption allows configuration of options for a new header block
 type HeaderBlockOption func(*HeaderBlock)
 

@@ -13,6 +13,11 @@ func (s DividerBlock) BlockType() MessageBlockType {
 	return s.Type
 }
 
+// GetBlockID returns the BlockID of the block
+func (s DividerBlock) GetBlockID() string {
+	return s.BlockID
+}
+
 // NewDividerBlock returns a new instance of a divider block
 func NewDividerBlock() *DividerBlock {
 	return &DividerBlock{

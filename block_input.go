@@ -18,6 +18,11 @@ func (s InputBlock) BlockType() MessageBlockType {
 	return s.Type
 }
 
+// GetBlockID returns the BlockID of the block
+func (s InputBlock) GetBlockID() string {
+	return s.BlockID
+}
+
 // NewInputBlock returns a new instance of an input block
 func NewInputBlock(blockID string, label, hint *TextBlockObject, element BlockElement) *InputBlock {
 	return &InputBlock{

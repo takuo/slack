@@ -22,6 +22,11 @@ func (s VideoBlock) BlockType() MessageBlockType {
 	return s.Type
 }
 
+// GetBlockID returns the BlockID of the block
+func (s VideoBlock) GetBlockID() string {
+	return s.BlockID
+}
+
 // NewVideoBlock returns an instance of a new Video Block type
 func NewVideoBlock(videoURL, thumbnailURL, altText, blockID string, title *TextBlockObject) *VideoBlock {
 	return &VideoBlock{

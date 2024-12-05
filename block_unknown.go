@@ -11,3 +11,8 @@ type UnknownBlock struct {
 func (b UnknownBlock) BlockType() MessageBlockType {
 	return b.Type
 }
+
+// GetBlockID returns the BlockID of the block
+func (b UnknownBlock) GetBlockID() string {
+	return b.BlockID
+}

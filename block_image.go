@@ -26,6 +26,11 @@ func (s ImageBlock) BlockType() MessageBlockType {
 	return s.Type
 }
 
+// GetBlockID returns the BlockID of the block
+func (s ImageBlock) GetBlockID() string {
+	return s.BlockID
+}
+
 // NewImageBlock returns an instance of a new Image Block type
 func NewImageBlock(imageURL, altText, blockID string, title *TextBlockObject) *ImageBlock {
 	return &ImageBlock{

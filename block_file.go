@@ -15,6 +15,11 @@ func (s FileBlock) BlockType() MessageBlockType {
 	return s.Type
 }
 
+// GetBlockID returns the BlockID of the block
+func (s FileBlock) GetBlockID() string {
+	return s.BlockID
+}
+
 // NewFileBlock returns a new instance of a file block
 func NewFileBlock(blockID string, externalID string, source string) *FileBlock {
 	return &FileBlock{
